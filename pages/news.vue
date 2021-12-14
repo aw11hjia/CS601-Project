@@ -1,8 +1,10 @@
 <template>
-    <div id="main">
+    <div>
+    <main>
         <Navigation />
         <h1>My Hometown News</h1>
         <Article v-for="article in articles" :key="article.title" :image="article.image" :id="article.title" :title="article.title" :source="article.source" :date="article.published_at" :description="article.description" :url="article.url"/>
+    </main>
     </div>
 </template>
 
@@ -58,7 +60,7 @@ export default {
 body {
   background-color: rgb(245, 232, 216);
 }
-#main{
+main{
     width: 980px;
     margin: auto;
     background-color: rgb(243, 223, 167);

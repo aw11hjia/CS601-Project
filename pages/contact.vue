@@ -1,5 +1,6 @@
 <template>
-    <div id="main">
+    <div>
+    <main>
     <Navigation />
     <div id="form">
        <h1>Fill The Form To Contact Me</h1>
@@ -67,6 +68,7 @@
 
 
     </div>
+    </main>
     </div>
 </template>
 
@@ -79,6 +81,18 @@ export default {
 //   props: {
 //     msg: String
 //   },
+  head() {
+        return {
+            title: "contact",
+            meta: [
+                {
+                    hid: "description",
+                    name: "decription",
+                    content: "contact form"
+                }
+            ]
+        };
+  },
   data() {
     return {
       loading: true,
@@ -87,7 +101,8 @@ export default {
       role: "",
       score: "",
       comment: "",
-      isSuccess: false
+      isSuccess: false,
+      isValidated: true,
     };
   },
   methods: {
@@ -99,6 +114,19 @@ export default {
         score: this.score,
         comment: this.comment,
       };
+
+      var isValidated = true;
+      if (data.fName.length < 2 || data.lName.length < 2) {
+        alert('Name should have at least 2 characters');
+          isValidated = false;
+      };
+
+      if( (!data.fName.match(/^[a-zA-Z]+$/)) || (!data.lName.match(/^[a-zA-Z]+$/))) {
+          alert('Names should only have alpha characters');
+          isValidated = false;
+      };
+
+      if (isValidated){
       axios
         .post("https://comment-receiver.glitch.me/comments", data, {
           headers: {
@@ -113,6 +141,7 @@ export default {
             // Error
           }
         );
+      }
     }
   }
 };
@@ -128,7 +157,7 @@ body {
     font-size: 15px;
 }
 
-#main {
+main {
     width: 1000px;
     padding-left: 30px;
     padding-right: 30px;

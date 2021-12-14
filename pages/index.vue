@@ -1,5 +1,6 @@
 <template>
-  <div id="main">
+  <div>
+      <main>
     
         <Navigation />
     
@@ -36,6 +37,7 @@
             <h4>My Favourite Music</h4>
             <iframe width="420" height="315" src="https://www.youtube.com/embed/SX_ViT4Ra7k"></iframe>
         </div>
+        </main>
   </div>
 </template>
 
@@ -67,7 +69,7 @@ body {
     background-color: rgb(245, 224, 224) !important;
 }
 
-#main {
+main {
   width: 1200px;
   margin: auto;
   background-color: rgb(245, 224, 224)

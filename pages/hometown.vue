@@ -1,5 +1,6 @@
 <template>
-    <div id="main">
+    <div>
+    <main>
     <Navigation />
     
     <div>
@@ -68,6 +69,7 @@
     <img src="../static/multimedia/Nanjing-massacre.jpeg" class="hometown-img">
     <p>The Nanjing Massacre or the Rape of Nanjing was an episode of mass murder and mass rape committed by Imperial Japanese troops against the residents of Nanjing (Nanking), at that time the capital of China, during the Second Sino-Japanese War (1937–1945). The massacre occurred over a period of six weeks starting on December 13, 1937, the day that the Japanese captured Nanjing.</p>
     <p>Japanese Army murdered tens or hundreds of thousands of disarmed combatants and unarmed Chinese civilians, and perpetrated widespread rape and looting. An estimated of over 300,000 Chinese were killed.</p>
+    </main>
   </div>
 </template>
 
@@ -101,7 +103,7 @@ body {
   background: url("../static/multimedia/hometown-background-blur.jpg") no-repeat center center fixed;
 }
 
-#main{
+main{
     width: 1050px;
     padding-left: 30px;
     padding-right: 30px;

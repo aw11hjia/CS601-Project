@@ -1,5 +1,6 @@
 <template>
-    <div id="main">
+    <div>
+    <main>
     <Navigation />
     <div class="page_title"><h1>Hantao's Education</h1></div>
     <table id="edu_table">
@@ -43,6 +44,7 @@
         <a href="https://www.troy.edu/index.html" id="troy"><img src="../static/multimedia/troy_university.jpg" alt="troy_university"></a>
         <a href="https://www.uwc-usa.org" id="uwc"><img src="../static/multimedia/UWC-USA_logo.gif" alt="uwc_usa"></a>
     </div>
+    </main>
     </div>
 </template>
 
@@ -70,7 +72,7 @@ body {
     background-color: #b89090;
 }
 
-#main {
+main {
     width: 1200px;
     margin: auto;
     

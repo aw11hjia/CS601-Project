@@ -1,5 +1,6 @@
 <template>
-    <div id="main">
+    <div>
+    <main>
             <Navigation />
             <div class="page_title"><h1>My Working Experience</h1></div>
           
@@ -49,6 +50,7 @@
                     </ul>
                 </div>
             </div>
+    </main>
         </div>
 </template>
 
@@ -76,7 +78,7 @@ body {
     background-color: #b89090;
 }
 
-#main {
+main {
     width: 980px;
     margin: auto;
     background-color: rgb(245, 219, 216);

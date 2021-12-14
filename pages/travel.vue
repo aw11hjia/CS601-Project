@@ -1,5 +1,6 @@
 <template>
     <div>
+    <main>
     <Navigation />   
     <div class="page_title"><h1>My Travels In The US</h1></div>
    
@@ -64,6 +65,7 @@
                 </div>
 
         </div>
+    </main>
 
     </div>
 </template>
